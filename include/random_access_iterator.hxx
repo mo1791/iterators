@@ -103,12 +103,9 @@ public:
 
 public:
     // Calculate difference between iterators
-    friend auto operator-(iterator const&,
-                                        iterator const&) noexcept -> difference_type;
-    friend auto operator-(iterator const&,
-                                        sentinel const&) noexcept -> difference_type;
-    friend auto operator-(sentinel const&,
-                                        iterator const&) noexcept -> difference_type;
+    friend auto operator-(iterator const&, iterator const&) noexcept -> difference_type;
+    friend auto operator-(iterator const&, sentinel const&) noexcept -> difference_type;
+    friend auto operator-(sentinel const&, iterator const&) noexcept -> difference_type;
     
 };
 
